@@ -9,7 +9,7 @@ export class BankAccountsController {
 
   @Post()
   create(@Body() createBankAccountDto: CreateBankAccountDto) {
-    console.log(createBankAccountDto);
+    console.log('BANK ACCOUNT DTO', createBankAccountDto);
     return this.bankAccountService.create(createBankAccountDto.account_number);
   }
 
